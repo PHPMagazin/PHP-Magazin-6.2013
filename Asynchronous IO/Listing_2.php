@@ -1,0 +1,1 @@
+$counter = 0;$periodic = new EvPeriodic(0, 1, null, function() use(&$counter) {  $counter++;  if ($counter == 5) {    Ev::stop();  }  echo "Periodic timer counts: $counter" . PHP_EOL;});$timer = new EvTimer(2, 0, function() use(&$counter) {  $counter++;  echo "Timer counts: $counter" . PHP_EOL;});Ev::run();

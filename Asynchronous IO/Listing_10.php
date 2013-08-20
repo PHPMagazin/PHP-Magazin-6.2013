@@ -1,0 +1,1 @@
+$out = $db = mysql_connect('localhost', 'test', 'test');mysql_select_db('test') or die('Could not select database');new EvIo($out, Ev::WRITE, function($eo) use($out) {  // do some asynchronous stuff here});/** * PHP Warning:  EvIo::__construct(): either valid PHP stream or valid PHP   * socket resource expected*/

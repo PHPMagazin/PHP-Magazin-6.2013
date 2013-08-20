@@ -1,0 +1,1 @@
+$rows = array(); while (($data = fgetcsv($fp, 0, ",")) !== false) {  $rows[] = new Row($data[0], $data[1], $data[2]);}$db = new PDO('mysql:host=localhost;dbname=test', 'test', 'test');    foreach ($rows as $row) {  $sql = "INSERT INTO test (f1, f2, f3) VALUES ('%s', '%s', '%s')";  $db->exec(sprintf($sql, $row->getCol1(), $row->getCol2(), $row->getCol3()));}
