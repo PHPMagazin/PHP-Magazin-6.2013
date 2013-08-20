@@ -1,0 +1,1 @@
+<?php[...]use Application\Listener\CompatibilityListener;class Module{  public function onBootstrap(MvcEvent $e)  {    [...]        // add application listener    $eventManager->attachAggregate(new ApplicationListener());    $eventManager->attachAggregate(new CompatibilityListener());  }  [...]}

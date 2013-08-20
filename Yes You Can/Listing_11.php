@@ -1,0 +1,1 @@
+<?php  $this->navigation('navigation')->menu()->setUlClass('nav');  $this->navigation('navigation')->menu()->setPartial(array(    'layout/navigation.phtml', 'default'  ));?>[...]<?php echo $this->navigation('navigation')->menu(); ?>[...]

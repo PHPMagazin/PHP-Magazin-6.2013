@@ -1,0 +1,1 @@
+<?phpreturn array(  [...]  'view_helpers' => array(    'invokables'=> array(      'date'         => 'Application\View\Helper\Date',    ),  ),    [...]);

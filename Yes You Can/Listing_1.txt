@@ -1,0 +1,1 @@
+<VirtualHost *>  ServerName dev.zf1example.de  DocumentRoot /home/devhost/dev.zf1example.de/public/  AccessFileName .htaccess  <Directory /home/devhost/dev.zf1example.de/public/>    Options Indexes FollowSymLinks MultiViews    AllowOverride All    Order allow,deny    allow from all  </Directory></VirtualHost>

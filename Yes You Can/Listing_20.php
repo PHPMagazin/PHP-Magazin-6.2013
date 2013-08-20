@@ -1,0 +1,1 @@
+<?php   $lang = \Locale::getPrimaryLanguage(\Locale::getDefault()); ?>[...]<td><a href="<?php echo $this->url('blog-article', array('url' => $article->getUrl(), 'lang' => $lang)); ?>"><?php echo $article->getTitle()?></a></td>[...]<a href="<?php echo $this->url('blog', array('lang' => $lang));?>" class="btn"><?php echo $this->translate('link_blog');?></a>
