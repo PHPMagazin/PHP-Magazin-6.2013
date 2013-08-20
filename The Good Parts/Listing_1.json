@@ -1,0 +1,1 @@
+{  "name": "My Cool Backbone App",  "version": "0.0.1",  "dependencies": {    "backbone": "~1.0.0",    "underscore": "~1.5.1",    "jquery": "~2.0.3",    "marionette": "~1.0.4"  }}
