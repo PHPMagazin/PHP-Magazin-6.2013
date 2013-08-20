@@ -1,0 +1,1 @@
+try {  throw {    name: 'Application Error',    message: 'The data you provided is insufficient'  }} catch (e) {  console.log(e);}

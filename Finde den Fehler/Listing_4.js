@@ -1,0 +1,1 @@
+$.ajax({  url: 'http://localhost:8080/user/4'}).done(function (data) {  // success callback}).fail(function () {  // error callback});

@@ -1,0 +1,1 @@
+try {  // ReferenceError  console.log(myUndefinedProperty);} catch (e) {  // Ausgabe des Fehlers  console.log(e);} finally {  // dieser Block wird immer ausgeführt  console.log('cleanup');}

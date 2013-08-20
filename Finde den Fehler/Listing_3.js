@@ -1,0 +1,1 @@
+fs.readFile('/tmp/input.txt', function (err, data) {  if (err) {    console.log('An error occurred' + err);  };  console.log(data);});
