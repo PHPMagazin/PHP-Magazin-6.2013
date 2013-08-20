@@ -1,0 +1,1 @@
+/*** A Basket** @Flow\Scope("session")*/class Basket {  /**   * Adds a book to the basket   *   * @param \RobertLemke\Example\Bookshop\Domain\Model\Book $book The book to add   * @return void   * @Flow\Session(autoStart=true)   */  public function addBook(Book $book) {    $this->books->add($book);  }}
