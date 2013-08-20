@@ -1,0 +1,1 @@
+protected function getRandomSlogan() {  $slogans = $this->Config()->get('slogans', array());  if (empty($slogans)) {    return 'No slogans configured';  } else {    $slogans = explode(';', $slogans);    $index = rand(0, count($slogans) - 1);    return $slogans[$index];  }}

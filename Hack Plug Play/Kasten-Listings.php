@@ -1,0 +1,4 @@
+// 1. Listing
+public function install() {  $this->subscribeEvent(    'Enlight_Controller_Action_PostDispatch_Frontend_Index',    'onPostDispatchIndex'  );  return true;}// 2. Listing
+public function onPostDispatchIndex(Enlight_Event_EventArgs $arguments) {  $view = $arguments->getSubject()->View();  $view->addTemplateDir($this->Path() . 'Views/');  $view->extendsTemplate('frontend/plugins/slogan_of_the_day/index.tpl');  $view->assign('slogan', $this->getRandomSlogan());}protected function getRandomSlogan() {  return 'No slogans configured';}// 3. Listing
+{block name="frontend_index_logo"}  <div style="padding-top: 10px">    <h2>{$slogan}</h2>  </div>{/block}
