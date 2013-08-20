@@ -1,0 +1,1 @@
+/* Prüfsumme löschen */FOR i=0 TO 15 DO  C[i] := 0ENDFOR   L := 0/* Verarbeiten der 16-Byte-Blöcke */FOR i=0 TO N/16 - 1 DO     /* Prüfsumme für Block i berechnen: */  FOR j=0 TO 15 DO    c := M[i*16 + j]    C[j] := S[c XOR L]    L := C[j]  ENDFORENDFOR

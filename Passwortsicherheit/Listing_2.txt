@@ -1,0 +1,1 @@
+/* Verarbeiten der 16-Byte-Blöcke */FOR i=0 TO N'/16 - 1 DO     /* Kopiere Block i nach X */  FOR j=0 TO 15 DO    X[16+j] := M[i*16 + j]    X[32+j] := (X[16+j] XOR X[j])  ENDFORt := 0  /* Es folgen 18 Runden */  FOR j=0 TO 17 DO    FOR k=0 TO 47 DO      t := (X[k] XOR S[t])      X[k] := t    ENDFOR  t := (t+j) MOD 256  ENDFORENDFOR
